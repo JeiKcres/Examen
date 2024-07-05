@@ -33,7 +33,7 @@ class DirectorioController extends Controller
 
     public function destroy(){
         $destruirContactos = contacto::delete();
-        return view('directorio');
+        return view('directorio', compact('destruirContactos'));
     }
     
 
