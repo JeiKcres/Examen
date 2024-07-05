@@ -31,4 +31,10 @@ class DirectorioController extends Controller
         return view('eliminar');
     }
 
+    public function destroy(){
+        $destruirContactos = contacto::delete();
+        return view('directorio');
+    }
+    
+
 }

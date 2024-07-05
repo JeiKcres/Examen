@@ -66,8 +66,8 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                    @foreach ($contactos as $contacto)
-                                                 <tr>
+                                                @foreach ($contactos as $contacto)
+                                                <tr>
                                                 <td>{{ $contacto->id}}</td>
                                                 <td>{{ $contacto->codigoEntrada }}</td>
                                                 <td>{{ $contacto->nombre }}</td>
